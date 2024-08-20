@@ -36,7 +36,6 @@ echo "CONFIG_PACKAGE_luci-app-design-config=y" >> .config
 echo "CONFIG_PACKAGE_luci-app-adguardhome=y" >> ./.config
 echo "CONFIG_PACKAGE_luci-app-ddns-go=y" >> ./.config
 echo "CONFIG_PACKAGE_luci-app-alist=y" >> ./.config
-echo "CONFIG_PACKAGE_luci-app-filebrowser=y" >> ./.config
 
 #添加科学上网插件
 echo "CONFIG_PACKAGE_luci-app-passwall=y" >> ./.config
