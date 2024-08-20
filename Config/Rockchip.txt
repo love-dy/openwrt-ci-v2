@@ -1,6 +1,7 @@
 #NANOPC NANOPI FASTRHINO ORANGEPI
 CONFIG_TARGET_rockchip=y
 CONFIG_TARGET_rockchip_armv8=y
+
 #设备列表
 CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s=y
 
