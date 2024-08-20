@@ -22,10 +22,19 @@ if [[ $WRT_URL == *"lede"* ]]; then
 	sed -i "s/(\(<%=pcdata(ver.luciversion)%>\))/\1 \/ $WRT_REPO-$WRT_DATE/g" $LEDE_FILE
 fi
 
-#默认主题修改
-echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=y" >> ./.config
-echo "CONFIG_PACKAGE_luci-app-$WRT_THEME-config=y" >> ./.config
 
+#配置主题
+#echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=y" >> ./.config
+#echo "CONFIG_PACKAGE_luci-app-$WRT_THEME-config=y" >> ./.config
+
+echo "CONFIG_PACKAGE_luci-theme-argon=y" >> .config
+echo "CONFIG_PACKAGE_luci-app-argon-config=y" >> .config
+echo "CONFIG_PACKAGE_luci-theme-design=y" >> .config
+echo "CONFIG_PACKAGE_luci-app-design-config=y" >> .config
+
+#添加插件
+echo "CONFIG_PACKAGE_luci-app-adguardhome=y" >> ./.config
+echo "CONFIG_PACKAGE_luci-app-ddns-go=y" >> ./.config
 
 #添加科学上网插件
 if [[ $WRT_URL == *"lede"* ]]; then
@@ -37,7 +46,6 @@ if [[ $WRT_URL == *"lede"* ]]; then
 	echo "CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy=y" >> ./.config
 	
-	echo "CONFIG_PACKAGE_luci-app-openclash=y" >> ./.config	
-	echo "CONFIG_PACKAGE_luci-app-adguardhome=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-openclash=y" >> ./.config		
 fi
 
