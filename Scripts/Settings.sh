@@ -27,10 +27,13 @@ fi
 #echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=y" >> ./.config
 #echo "CONFIG_PACKAGE_luci-app-$WRT_THEME-config=y" >> ./.config
 
+echo "CONFIG_PACKAGE_luci-theme-bootstrap=y" >> .config
+echo "CONFIG_PACKAGE_luci-theme-material=y" >> .config
+
 echo "CONFIG_PACKAGE_luci-theme-argon=y" >> .config
-#echo "CONFIG_PACKAGE_luci-app-argon-config=y" >> .config
-echo "CONFIG_PACKAGE_luci-theme-design=y" >> .config
-#echo "CONFIG_PACKAGE_luci-app-design-config=y" >> .config
+echo "CONFIG_PACKAGE_luci-app-argon-config=y" >> .config
+
+
 
 #添加插件
 echo "CONFIG_PACKAGE_luci-app-adguardhome=y" >> ./.config
