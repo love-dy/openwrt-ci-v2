@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #修改默认主题
-sed -i "s/luci-theme-bootstrap/luci-theme-$WRT_THEME/g" $(find ./feeds/luci/collections/ -type f -name "Makefile")
+#sed -i "s/luci-theme-bootstrap/luci-theme-$WRT_THEME/g" $(find ./feeds/luci/collections/ -type f -name "Makefile")
 #修改默认WIFI名
 sed -i "s/\.ssid=.*/\.ssid=$WRT_WIFI/g" $(find ./package/kernel/mac80211/ ./package/network/config/ -type f -name "mac80211.*")
 
@@ -24,16 +24,8 @@ fi
 
 
 #配置主题
-#echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=y" >> ./.config
-#echo "CONFIG_PACKAGE_luci-app-$WRT_THEME-config=y" >> ./.config
-
-echo "CONFIG_PACKAGE_luci-theme-bootstrap=y" >> .config
-echo "CONFIG_PACKAGE_luci-theme-material=y" >> .config
-
-echo "CONFIG_PACKAGE_luci-theme-argon=y" >> .config
-echo "CONFIG_PACKAGE_luci-app-argon-config=y" >> .config
-
-
+echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=y" >> ./.config
+echo "CONFIG_PACKAGE_luci-app-$WRT_THEME-config=y" >> ./.config
 
 #添加插件
 echo "CONFIG_PACKAGE_luci-app-adguardhome=y" >> ./.config
@@ -49,4 +41,3 @@ echo "CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria=y" >> ./.config
 echo "CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy=y" >> ./.config
 	
 echo "CONFIG_PACKAGE_luci-app-openclash=y" >> ./.config		
-
