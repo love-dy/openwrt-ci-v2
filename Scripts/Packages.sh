@@ -36,7 +36,6 @@ UPDATE_PACKAGE "adguardhome" "rufengsuixing/luci-app-adguardhome" "master"
 UPDATE_PACKAGE "ddns-go" "sirpdboy/luci-app-ddns-go" "main"
 
 
-
 #更新软件包版本
 UPDATE_VERSION() {
 	local PKG_NAME=$1
