@@ -24,7 +24,7 @@ UPDATE_PACKAGE() {
 UPDATE_PACKAGE "argon" "jerrykuku/luci-theme-argon" "$([[ $WRT_URL == *"lede"* ]] && echo "18.06" || echo "master")"
 UPDATE_PACKAGE "argon-config" "jerrykuku/luci-app-argon-config" "$([[ $WRT_URL == *"lede"* ]] && echo "18.06" || echo "master")"
 
-#UPDATE_PACKAGE "passwall" "xiaorouji/openwrt-passwall" "main"
+#UPDATE_PACKAGE "passwall" "xiaorouji/openwrt-passwall" "main" "pkg"
 #UPDATE_PACKAGE "ssr-plus" "fw876/helloworld" "master" "pkg"
  
 #UPDATE_PACKAGE "openwrt-packages" "kenzok8/openwrt-packages" "master"
@@ -32,7 +32,10 @@ UPDATE_PACKAGE "argon-config" "jerrykuku/luci-app-argon-config" "$([[ $WRT_URL =
 UPDATE_PACKAGE "small" "kenzok8/small" "master"
 UPDATE_PACKAGE "openclash" "vernesong/OpenClash" "dev" "pkg"
 
-UPDATE_PACKAGE "adguardhome" "rufengsuixing/luci-app-adguardhome" "master"
+UPDATE_PACKAGE "smartdns" "pymumu/smartdns" "master"
+UPDATE_PACKAGE "luci-app-smartdns" "pymumu/luci-app-smartdns" "master"
+
+UPDATE_PACKAGE "luci-app-adguardhome" "rufengsuixing/luci-app-adguardhome" "master"
 UPDATE_PACKAGE "ddns-go" "sirpdboy/luci-app-ddns-go" "main"
 
 
