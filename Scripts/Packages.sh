@@ -32,9 +32,6 @@ UPDATE_PACKAGE "argon-config" "jerrykuku/luci-app-argon-config" "$([[ $WRT_URL =
 UPDATE_PACKAGE "small" "kenzok8/small" "master"
 UPDATE_PACKAGE "openclash" "vernesong/OpenClash" "dev" "pkg"
 
-#UPDATE_PACKAGE "smartdns" "pymumu/smartdns" "master"
-UPDATE_PACKAGE "smartdns" "pymumu/luci-app-smartdns" "master"
-
 UPDATE_PACKAGE "adguardhome" "rufengsuixing/luci-app-adguardhome" "master"
 UPDATE_PACKAGE "ddns-go" "sirpdboy/luci-app-ddns-go" "main"
 
