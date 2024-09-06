@@ -1,9 +1,13 @@
 #X86 X64
 CONFIG_TARGET_x86=y
 CONFIG_TARGET_x86_64=y
-#设备列表
+
+#设备列表，编译单个设备时需开启
 #CONFIG_TARGET_x86_64_DEVICE_generic=y
+#设备列表，编译多个设备时需开启，此项是支持所有设备，开启后不需要添加下面的设备列表
 CONFIG_TARGET_ALL_PROFILES=y
+#设备列表，编译多个设备时，添加所有需要编译的设备
+#CONFIG_TARGET_DEVICE_x86_64_DEVICE_generic=y
 
 #组件调整
 CONFIG_GRUB_IMAGES=y
