@@ -1,12 +1,13 @@
 #NANOPI
 CONFIG_TARGET_rockchip=y
 CONFIG_TARGET_rockchip_armv8=y
-#设备列表
+
+#设备列表，编译单个设备时只能开启其中一项
 #CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s=y
 #CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4se=y
 #CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r5s=y
 #CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r6s=y
-
+#设备列表，编译多个设备时，添加所有需要编译的设备
 CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s=y
 CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r6s=y
 
