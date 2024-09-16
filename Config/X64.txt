@@ -19,13 +19,11 @@ CONFIG_VMDK_IMAGES=n
 CONFIG_PACKAGE_autocore-x86=y
 
 #Virtualization
-CONFIG_PACKAGE_open-vm-tools-fuse=y
-
 CONFIG_PACKAGE_kmod-kvm-amd=y
 CONFIG_PACKAGE_kmod-kvm-intel=y
 CONFIG_PACKAGE_kmod-kvm-x86=y
+CONFIG_PACKAGE_open-vm-tools-fuse=y
 
 #插件调整
 #CONFIG_PACKAGE_luci-app-dockerman=y
 
-#END
