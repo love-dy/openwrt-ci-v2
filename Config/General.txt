@@ -14,11 +14,26 @@ CONFIG_TARGET_ROOTFS_PARTSIZE=1024
 #CONFIG_DEVEL=y
 #CONFIG_CCACHE=y
 
-#添加组件
+#依赖项
 #CONFIG_PACKAGE_kmod-fuse=y
-##CONFIG_PACKAGE_kmod-tun=y
+#CONFIG_PACKAGE_kmod-tun=y
 #CONFIG_PACKAGE_kmod-wireguard=y
 #CONFIG_PACKAGE_wireguard-tools=y
+
+#预装软件包
+#CONFIG_PACKAGE_automount=y
+#CONFIG_PACKAGE_autosamba=y
+#CONFIG_PACKAGE_block-mount=y
+#CONFIG_PACKAGE_cfdisk=y
+#CONFIG_PACKAGE_ip-full=y
+#CONFIG_PACKAGE_luci=y
+#CONFIG_PACKAGE_luci-base=y
+#CONFIG_PACKAGE_luci-compat=y
+#CONFIG_PACKAGE_luci-lua-runtime=y
+#CONFIG_PACKAGE_luci-lib-ipkg=y
+
+CONFIG_PACKAGE_blockd=y
+CONFIG_PACKAGE_fdisk=y
 
 #USB驱动
 CONFIG_PACKAGE_kmod-usb-core=y
@@ -43,26 +58,11 @@ CONFIG_PACKAGE_kmod-usb-storage-uas=y
 CONFIG_PACKAGE_kmod-usb-net-rtl8150=y
 CONFIG_PACKAGE_kmod-usb-net-rtl8152-vendor=y
 
-#组件调整
-##CONFIG_PACKAGE_automount=y
-#CONFIG_PACKAGE_autosamba=y
-##CONFIG_PACKAGE_block-mount=y
-##CONFIG_PACKAGE_htop=y
-#CONFIG_PACKAGE_iperf3=y
-#CONFIG_PACKAGE_cfdisk=y
-#CONFIG_PACKAGE_cgdisk=y
-#CONFIG_PACKAGE_fdisk=y
-#CONFIG_PACKAGE_gdisk=y
-##CONFIG_PACKAGE_ip-full=y
+#开启ipv6
 CONFIG_PACKAGE_ipv6helper=y
 CONFIG_PACKAGE_ip6tables=y
 CONFIG_PACKAGE_ip6tables-extra=y
 CONFIG_PACKAGE_ip6tables-mod-nat=y
-##CONFIG_PACKAGE_luci=y
-##CONFIG_PACKAGE_luci-base=y
-##CONFIG_PACKAGE_luci-compat=y
-##CONFIG_PACKAGE_luci-lua-runtime=y
-#CONFIG_PACKAGE_luci-lib-ipkg=y
 
 #增加插件，科学上网插件请在Scripts/Settings.sh调整
 CONFIG_PACKAGE_luci-app-arpbind=y
@@ -86,7 +86,7 @@ CONFIG_PACKAGE_luci-theme-bootstrap=y
 CONFIG_PACKAGE_luci-theme-material=y
 CONFIG_PACKAGE_luci-theme-netgear=y
 
-#插件调整
+#Docker
 CONFIG_PACKAGE_luci-app-dockerman=y
 
 #删除插件
