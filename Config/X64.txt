@@ -15,15 +15,12 @@ CONFIG_GRUB_IMAGES=y
 CONFIG_GRUB_EFI_IMAGES=y
 CONFIG_VMDK_IMAGES=n
 
-#增加组件
-##CONFIG_PACKAGE_autocore-x86=y
+#预装软件包
+#CONFIG_PACKAGE_autocore-x86=y
 
-#Virtualization
-#CONFIG_PACKAGE_kmod-kvm-amd=y
-#CONFIG_PACKAGE_kmod-kvm-intel=y
-#CONFIG_PACKAGE_kmod-kvm-x86=y
+#ESXi
 CONFIG_PACKAGE_open-vm-tools-fuse=y
 
-#插件调整
+#Docker
 #CONFIG_PACKAGE_luci-app-dockerman=y
 
