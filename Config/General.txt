@@ -78,6 +78,7 @@ CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-vlmcsd=y
 CONFIG_PACKAGE_luci-app-wireguard=y
 CONFIG_PACKAGE_luci-app-wrtbwmon=y
+CONFIG_PACKAGE_luci-app-zerotier=y
 
 CONFIG_PACKAGE_luci-theme-bootstrap=y
 CONFIG_PACKAGE_luci-theme-material=y
@@ -95,5 +96,5 @@ CONFIG_PACKAGE_luci-app-unblockmusic=n
 CONFIG_PACKAGE_luci-app-vsftpd=n
 CONFIG_PACKAGE_luci-app-wol=n
 CONFIG_PACKAGE_luci-app-xlnetacc=n
-CONFIG_PACKAGE_luci-app-zerotier=n
+
 
