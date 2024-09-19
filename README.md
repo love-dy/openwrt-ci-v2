@@ -11,6 +11,8 @@ https://github.com/immortalwrt/immortalwrt
 
 固件每天自动编译。
 
+固件信息里的时间为编译开始的时间。
+
 ROCKCHIP系列、MEDIATEK系列、X64系列。
 
 # 目录简要说明：
