@@ -86,7 +86,7 @@ CONFIG_PACKAGE_luci-theme-material=y
 CONFIG_PACKAGE_luci-theme-netgear=y
 
 #Docker
-CONFIG_PACKAGE_luci-app-dockerman=y
+#CONFIG_PACKAGE_luci-app-dockerman=y
 
 #删除插件
 CONFIG_PACKAGE_luci-app-accesscontrol=n
