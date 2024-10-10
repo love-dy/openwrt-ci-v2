@@ -16,7 +16,7 @@ on:
   #自动编译：每周1,3,5早上4点(UTC 20:00) --分 时 日 月 周
   #- cron: 0 20 * * 1,3,5
   schedule:
-    - cron: 0 20 * * 2
+    - cron: 0 20 * * 1,3,5
   #手动编译
   workflow_dispatch:
     inputs:
